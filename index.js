@@ -1,7 +1,10 @@
 const express = require("express");
+const { globalMiddleware } = require("./middlewares/globalMiddleware");
 const userRouter = require("./routes/users.route");
 
 const app = express();
+
+app.use(globalMiddleware); 
 
 app.get("/", (req, res) => {
     res

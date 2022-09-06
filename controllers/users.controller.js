@@ -1,6 +1,9 @@
 const getUsers = (req, res) => {
     res.status(200).send("All users");
 };
+const getUser = (req, res) => {
+    res.status(200).send("All users");
+};
 
 const createUser = (req, res) => {
     res.status(200).send("Create user");
@@ -16,6 +19,7 @@ const deleteUser = (req, res) => {
 
 module.exports = {
     getUsers,
+    getUser,
     createUser,
     updateUser,
     deleteUser,
